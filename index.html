@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+      }
+      .desktop-image {
+        display: block;
+      }
+      .mobile-image {
+        display: none;
+        width: 100%;
+        max-width: 500px; /* 이미지의 최대 크기 설정 */
+        margin: 0 auto; /* 가운데 정렬 */
+      }
+      @media only screen and (max-width: 767px) {
+        .desktop-image {
+          display: none;
+        }
+        .mobile-image {
+          display: block;
+        }
+      }
+     
+    </style>
+  </head>
+  <body>
+    <a href="https://open.kakao.com/o/s8M3DSdf" target="blank">
+    <img src="a.png" alt="Desktop Image" class="desktop-image">
+    <img src="b.png" alt="Mobile Image" class="mobile-image">
+    </a>
+  </body>
+</html>
